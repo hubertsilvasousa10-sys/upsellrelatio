@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center bg-[#fafafa]">
       
-      {/* Red Line / Barra de Notificação Superior */}
+      {/* Barra de Notificação Superior (Urgência e Confirmação) */}
       <div className="w-full bg-red-600 text-white py-3 px-4 text-center shadow-md animate-pulse">
         <p className="text-sm md:text-base font-medium flex items-center justify-center gap-2">
           <AlertCircle className="w-4 h-4 md:w-5 h-5" />
@@ -18,29 +18,28 @@ const App: React.FC = () => {
 
       <main className="max-w-3xl w-full flex flex-col space-y-16 py-12 px-6 md:py-20">
         
-        {/* 1. Headline Principal */}
+        {/* Headline Principal */}
         <section className="text-center space-y-6">
           <h1 className="serif text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight">
             Pare de carregar o peso do silêncio no peito.
           </h1>
           
-          {/* 2. Subheadline */}
           <div className="space-y-12">
             <p className="text-xl md:text-2xl text-gray-600 font-light leading-relaxed max-w-2xl mx-auto">
               Não é sobre esquecer quem partiu, mas sobre <span className="text-gray-900 font-medium">silenciar a dor emocional</span> que impede você de respirar em paz.
             </p>
 
-            {/* Video VSL - Wistia Player */}
+            {/* VSL Video - Wistia Player */}
             <div className="w-full max-w-4xl mx-auto">
               <div className="rounded-xl shadow-2xl overflow-hidden border-4 border-white bg-black">
-                {/* @ts-ignore - custom element */}
+                {/* @ts-ignore */}
                 <wistia-player media-id="bdbsusffp7" aspect="1.7777777777777777"></wistia-player>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 3. Bloco de Dor */}
+        {/* Blocos de Argumentação Emocional */}
         <section className="bg-white border border-gray-100 p-8 md:p-12 rounded-2xl shadow-sm max-w-2xl mx-auto w-full">
           <h2 className="text-sm uppercase tracking-widest text-gray-400 font-semibold mb-8">
             Você reconhece essa sensação?
@@ -73,7 +72,7 @@ const App: React.FC = () => {
           </ul>
         </section>
 
-        {/* 4. Bloco "O que é" & 5. "Como funciona" */}
+        {/* Descrição do Produto */}
         <section className="space-y-12 max-w-2xl mx-auto w-full">
           <div className="text-center space-y-4">
             <h2 className="serif text-3xl text-gray-900">O Protocolo de 7 Dias</h2>
@@ -94,7 +93,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* 6. Bloco "Para quem é" */}
+        {/* Check de Audiência */}
         <section className="border-t border-gray-200 pt-16 max-w-2xl mx-auto w-full">
           <h2 className="serif text-3xl text-gray-900 text-center mb-10">Este método é para você se:</h2>
           <div className="space-y-4">
@@ -112,7 +111,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* 7. Garantia Emocional */}
+        {/* Seção de Garantia */}
         <section className="text-center space-y-6 px-4 max-w-2xl mx-auto w-full">
           <div className="inline-flex items-center justify-center p-3 bg-gray-100 rounded-full mb-2">
             <ShieldCheck className="w-6 h-6 text-gray-600" />
@@ -123,7 +122,7 @@ const App: React.FC = () => {
           </p>
         </section>
 
-        {/* 8. Call to Action */}
+        {/* Chamada para Ação (CTA) */}
         <section className="flex flex-col items-center space-y-4 pb-12 max-w-2xl mx-auto w-full text-center">
           <a 
             href={checkoutUrl}
@@ -138,7 +137,6 @@ const App: React.FC = () => {
 
       </main>
 
-      {/* Footer minimalista */}
       <footer className="mt-auto py-12 text-gray-400 text-xs text-center border-t border-gray-100 w-full max-w-2xl px-6">
         <p>&copy; 2024 Protocolo Silenciar. Todos os direitos reservados.</p>
       </footer>

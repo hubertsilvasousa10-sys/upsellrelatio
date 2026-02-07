@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Dias Para Silenciar a Dor do Afastamento</title>
     
-    <!-- Tailwind CSS via CDN - Garantia de funcionamento sem build -->
+    <!-- Tailwind CSS via CDN para compatibilidade total sem build -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
         .serif {
             font-family: 'Playfair Display', serif;
         }
-        /* Estilo do Placeholder Wistia */
+        /* Estilo do Placeholder Wistia para evitar CLS */
         wistia-player[media-id='bdbsusffp7']:not(:defined) { 
             background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/bdbsusffp7/swatch'); 
             display: block; 
@@ -58,7 +58,6 @@
       a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
       document.head.appendChild(a);
     </script>
-
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
       data-utmify-prevent-xcod-sck
@@ -72,22 +71,21 @@
     <script src="https://fast.wistia.com/player.js" async></script>
     <script src="https://fast.wistia.com/embed/bdbsusffp7.js" async type="module"></script>
 
-    <!-- Import Map para carregar bibliotecas via Browser ESM -->
+    <!-- Import Map para carregar bibliotecas via ESM diretamente no navegador -->
     <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@19.0.0",
     "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
     "lucide-react": "https://esm.sh/lucide-react@0.463.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
   }
 }
 </script>
 </head>
 <body>
     <div id="root"></div>
-    <!-- Carregamento direto do script principal sem necessidade de build nodes -->
     <script type="module" src="./index.tsx"></script>
 </body>
 </html>
