@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Dias Para Silenciar a Dor do Afastamento</title>
     
-    <!-- Import Map deve vir antes de qualquer script module -->
+    <!-- Import Map consolidado - Crucial para rodar sem Node.js local -->
     <script type="importmap">
 {
   "imports": {
@@ -18,7 +18,7 @@
 }
 </script>
 
-    <!-- Tailwind CSS via CDN -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,6 @@
         .serif {
             font-family: 'Playfair Display', serif;
         }
-        /* Estilo do Placeholder Wistia */
         wistia-player[media-id='bdbsusffp7']:not(:defined) { 
             background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/bdbsusffp7/swatch'); 
             display: block; 
@@ -44,7 +43,7 @@
         }
     </style>
 
-    <!-- Meta Pixel Code (Script no Head) -->
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -67,25 +66,19 @@
       a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
       document.head.appendChild(a);
     </script>
-    <script
-      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-      data-utmify-prevent-xcod-sck
-      data-utmify-prevent-subids
-      async
-      defer
-    ></script>
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
 
-    <!-- Wistia Player Scripts -->
+    <!-- Wistia Player -->
     <script src="https://fast.wistia.com/player.js" async></script>
     <script src="https://fast.wistia.com/embed/bdbsusffp7.js" async type="module"></script>
 </head>
 <body>
-    <!-- Meta Pixel Code (Noscript no Body para evitar erro de build HTML) -->
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1280814627221977&ev=PageView&noscript=1"
-    /></noscript>
+    <!-- Noscript do Pixel fora do head para compatibilidade com Vite -->
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1280814627221977&ev=PageView&noscript=1"/></noscript>
     
     <div id="root"></div>
+    
+    <!-- Script principal -->
     <script type="module" src="./index.tsx"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center bg-[#fafafa]">
       
-      {/* Barra de Notificação Superior (Urgência e Confirmação) */}
+      {/* Barra de Notificação Superior */}
       <div className="w-full bg-red-600 text-white py-3 px-4 text-center shadow-md animate-pulse">
         <p className="text-sm md:text-base font-medium flex items-center justify-center gap-2">
           <AlertCircle className="w-4 h-4 md:w-5 h-5" />
@@ -29,7 +29,7 @@ const App: React.FC = () => {
               Não é sobre esquecer quem partiu, mas sobre <span className="text-gray-900 font-medium">silenciar a dor emocional</span> que impede você de respirar em paz.
             </p>
 
-            {/* VSL Video - Wistia Player */}
+            {/* VSL Video */}
             <div className="w-full max-w-4xl mx-auto">
               <div className="rounded-xl shadow-2xl overflow-hidden border-4 border-white bg-black">
                 {/* @ts-ignore */}
@@ -39,7 +39,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Blocos de Argumentação Emocional */}
+        {/* Argumentação */}
         <section className="bg-white border border-gray-100 p-8 md:p-12 rounded-2xl shadow-sm max-w-2xl mx-auto w-full">
           <h2 className="text-sm uppercase tracking-widest text-gray-400 font-semibold mb-8">
             Você reconhece essa sensação?
@@ -72,7 +72,7 @@ const App: React.FC = () => {
           </ul>
         </section>
 
-        {/* Descrição do Produto */}
+        {/* Produto */}
         <section className="space-y-12 max-w-2xl mx-auto w-full">
           <div className="text-center space-y-4">
             <h2 className="serif text-3xl text-gray-900">O Protocolo de 7 Dias</h2>
@@ -93,7 +93,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Check de Audiência */}
+        {/* Audiência */}
         <section className="border-t border-gray-200 pt-16 max-w-2xl mx-auto w-full">
           <h2 className="serif text-3xl text-gray-900 text-center mb-10">Este método é para você se:</h2>
           <div className="space-y-4">
@@ -111,7 +111,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Seção de Garantia */}
+        {/* Garantia */}
         <section className="text-center space-y-6 px-4 max-w-2xl mx-auto w-full">
           <div className="inline-flex items-center justify-center p-3 bg-gray-100 rounded-full mb-2">
             <ShieldCheck className="w-6 h-6 text-gray-600" />
@@ -122,7 +122,7 @@ const App: React.FC = () => {
           </p>
         </section>
 
-        {/* Chamada para Ação (CTA) */}
+        {/* CTA */}
         <section className="flex flex-col items-center space-y-4 pb-12 max-w-2xl mx-auto w-full text-center">
           <a 
             href={checkoutUrl}

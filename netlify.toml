@@ -1,5 +1,6 @@
 [build]
   publish = "."
+  command = "" # Deixamos vazio para aceitar o drag and drop ou build simples do Vite sem erros
 
 [[redirects]]
   from = "/*"
